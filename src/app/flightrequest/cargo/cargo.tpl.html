@@ -1,0 +1,540 @@
+<div class="us fbo dont-padding-top">
+    <!--<div class="container">-->
+        <!--<div class="row overflow margin_bottom_0">-->
+            <!--<div class="col-md-12">-->
+                <div class="sec-header sec-small no-opacity">
+                    <div class="container relative">
+                        <h1>CARGO SERVICE REQUEST</h1>
+                    </div>
+                    <img src="assets/images/useless/cargo.jpg" id="goUp" alt="Flight Request Cargo"/>
+                    <!--<img src="assets/images/flight-request-cargo.jpg" id="goUp" alt="Flight Request Cargo"/>-->
+                </div>
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="barSky">
+        <div id="clouds">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row overflow">
+            <div class="col-md-12">
+            <p class="right"><span class="color-red">*</span> Required information</p>
+                <form class="newForm font-size-normal" onsubmit="return false;">
+                    <div class="row overflow">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <p class="inline-block">
+                                        Current Date:
+                                    </p>
+                                    <div class="inline-block relative">
+                                        <input type="text" maxlength="12"  id="todayInput" class="calendarInput"/>
+                                        <!--<input type='text' class="form-control"/>-->
+                                        <!--<span class="input-group-addon"></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="tabs fixed">
+                        <div class="tabs-head">
+                            <ul>
+                                <li class="active">
+                                    <p>INFORMATION</p>
+                                </li>
+                                <li>
+                                    <p>FLIGHT INFORMATION</p>
+                                </li>
+                                <li>
+                                    <p>ADDITIONAL SERVICES</p>
+                                </li>
+                                <li>
+                                    <p>PAYMENT GUARANTEE</p>
+                                </li>
+                            </ul>
+                            <p class="aux"><span id="actualStep">1</span> of 4 steps</p>
+                        </div>
+                        <div class="tabs-body">
+                            <ul id="targetUl">
+                                <li>
+                                    <div class="row overflow margin_bottom_0">
+                                        <div class="col-md-6">
+                                            <h3>Personal information.</h3>
+                                            <div class="row overflow margin_bottom_0">
+                                                <div class="col-md-12">
+                                                    <fieldset>
+                                                        <label for="name">Request by <span>*</span>:</label>
+                                                        <input type="text" id="name" name="name" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="phone1">Phone <span>*</span>:</label>
+                                                        <input type="text" id="phone1" name="phone1" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="email">E-mail <span>*</span>:</label>
+                                                        <input type="email" id="email" name="email" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3>Company information.</h3>
+                                            <div class="row overflow margin_bottom_0">
+                                                <div class="col-md-12">
+                                                    <fieldset>
+                                                        <label for="company">Company name <span>*</span>:</label>
+                                                        <input type="text" id="company" name="company" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <fieldset>
+                                                        <label for="adress">Billing Address <span>*</span>:</label>
+                                                        <input type="text" id="adress" name="adress" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="phone2">Phone <span>*</span>:</label>
+                                                        <input type="text" id="phone2" name="phone2" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="acounts">Accounts Payables Contact <span>*</span>:</label>
+                                                        <input type="text" id="acounts" name="acounts" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="fax">Fax:</label>
+                                                        <input type="text" id="fax" name="fax"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <fieldset>
+                                                        <label for="email2">E-mail <span>*</span>:</label>
+                                                        <input type="email" id="email2" name="email2" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                    <fieldset>
+                                                        <label for="tax">Tax ID <span>*</span>:</label>
+                                                        <input type="text" id="tax" name="tax" required="required"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <fieldset class="text">
+                                                        <p>If not, you must apply to get a one time permit.</p>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="row overflow">-->
+                                        <!--<div class="col-md-12">-->
+                                            <!--<hr/>-->
+                                            <!--<p class="overflow controlsNav">-->
+                                                <!--<a class="nextLeft controlSingleNav right" href="#">Next</a>-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </li>
+                                <li class="">
+                                    <div class="row overflow">
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="aircraft_type">AIRCRAFT TYPE:</label>
+                                                <input type="text" id="aircraft_type" name="aircraft_type"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="tail_number">TAIL NUMBER:</label>
+                                                <input type="text" id="tail_number" name="tail_number"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="trip_number">TRIP NUMBER:</label>
+                                                <input type="text" id="trip_number" name="trip_number"/>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow">
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="aircraft_owner">AIRCRAFT OWNER:</label>
+                                                <input type="text" id="aircraft_owner" name="aircraft_owner"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="owner_trip">OWNER TRIP NO.:</label>
+                                                <input type="text" id="owner_trip" name="owner_trip"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="boxes"># OF BOXES:</label>
+                                                <input type="text" id="boxes" name="boxes" maxlength="3" class="justNumbers"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="freight_owner">FREIGHT OWNER:</label>
+                                                <input type="text" id="freight_owner" name="freight_owner"/>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow margin_bottom_0">
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="weight">WEIGHT:</label>
+                                                <input type="text" id="weight" name="weight"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset>
+                                                <label for="brokers_name">BROKER´S NAME:</label>
+                                                <input type="text" id="brokers_name" name="brokers_name"/>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset class="radio">
+                                                <p>PERMIT/AUTH HOLDER:</p>
+                                                <label for="yesHolder">
+                                                    Yes: <input type="radio" value="yes" name="holder" id="yesHolder" checked="checked"/>
+                                                </label>
+                                                <label for="noHolder">
+                                                    No: <input type="radio" value="no" name="holder" id="noHolder"/>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <fieldset class="radio">
+                                                <p>PART:</p>
+                                                <label for="part121">
+                                                    Part 121: <input type="radio" value="part121" name="parts" id="part121" checked="checked"/>
+                                                </label>
+                                                <label for="part135">
+                                                    Part 135: <input type="radio" value="part135" name="parts" id="part135"/>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <hr class="almost"/>
+                                    <div class="row overflow">
+                                        <div class="col-md-6">
+                                            <fieldset class="radio">
+                                                <label for="part121">
+                                                    Full service: <input type="radio" value="serviceFull" name="service" id="serviceFull" checked="checked"/>
+                                                </label>
+                                                <label for="part135">
+                                                    Basic service: <input type="radio" value="serviceBasic" name="service" id="serviceBasic"/>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset class="radio">
+                                                <label for="pickup">
+                                                    Pick Up: <input type="checkbox" value="pickup" name="pickup" id="pickup"/>
+                                                </label>
+                                                <label for="dropoff">
+                                                    Drop Off: <input type="checkbox" value="dropoff" name="dropoff" id="dropoff"/>
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow">
+                                        <div class="col-md-12">
+                                            <fieldset class="text">
+                                                <p><strong>FULL SERVICE PACKAGE INCLUDES: </strong>Loading / Offloading, Regular Landing Fee, Regular Parking Fee (2 hours), Aircraft Immigration Fee, Customs and Health Clearances, Crew Transportation, Flight Plan, Communications, Coordination, Fuel Coordination, Fuel into Plane Supervision,  Regular Tips.</p>
+                                                <p><strong>BASIC SERVICE PACKAGE INCLUDES: </strong>All of the above services, excluding Loading / Offloading.</p>
+                                            </fieldset>
+                                        </div>
+                                        <!--<div class="col-md-12">-->
+                                            <!--<hr/>-->
+                                            <!--<p class="overflow controlsNav">-->
+                                                <!--<a class="tabLeft controlSingleNav left" href="#">Previous</a>-->
+                                                <!--<a class="nextLeft controlSingleNav right" href="#">Next</a>-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <div class="row overflow labels-Full">
+                                        <div class="col-md-12">
+                                            <div class="row overflow margin_bottom_0">
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="oversee">OVERSEE:
+                                                        <input type="checkbox" id="oversee" name="oversee"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="only_loading">ONLY LOADING:
+                                                        <input type="checkbox" id="only_loading" name="only_loading"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="only__off_loading">ONLY OFFLOADINGG:
+                                                        <input type="checkbox" id="only__off_loading" name="only__off_loading"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row overflow margin_bottom_0">
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="permit">PERMIT:
+                                                        <input type="checkbox" id="permit" name="permit"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="other">FUEL THROUGH ICCS:
+                                                        <input type="checkbox" id="other" name="other"/>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input type="text" id="what_other" name="what_other" placeholder="Other"/>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="overtime">OVERTIME:
+                                                        <input type="checkbox" id="overtime" name="overtime"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="row overflow margin_bottom_0">
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="overnight">OVERNIGHT:
+                                                        <input type="checkbox" id="overnight" name="overnight"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="ground">GROUND TRANSPORTATION:
+                                                        <input type="checkbox" id="ground" name="ground"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <fieldset class="radio">
+                                                        <label for="other_service">OTHER SERVICE:
+                                                        <input type="checkbox" id="other_service" name="other_service"/>
+                                                        </label>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea name="what_other_area" id="what_other_area" cols="30" rows="10" placeholder="Specify"></textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="row overflow">
+                                        <div class="col-md-12">
+                                            <h3>ITINERARY</h3>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow margin_bottom_0">
+                                        <div class="col-md-12">
+                                            <table class="latiosaxe">
+                                                <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>ICAO ID/Airports</th>
+                                                    <th>Date (Z)</th>
+                                                    <th>ETA (Z)</th>
+                                                    <th>ETD (Z)</th>
+                                                    <th>Number of Pax</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>From:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>To:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>From:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>To:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>From:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>To:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            <div class="right addRow" style="margin-bottom: 10px">
+                                                <a href="#" id="addRowMagic" class="button blue inline-block">Add another <i class="fa fa-plus"></i></a>
+                                            </div>
+                                            <table class="latiosaxe">
+                                                <thead>
+                                                <tr>
+                                                    <th>Flight Crew</th>
+                                                    <th>Name</th>
+                                                    <th>DOB</th>
+                                                    <th>Licence #</th>
+                                                    <th>Passport #</th>
+                                                    <th>Citizenship</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Captain</td>
+                                                    <td><input type="text" maxlength="70"/></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>First Officer</td>
+                                                    <td><input type="text" maxlength="70"/></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Other</td>
+                                                    <td><input type="text" maxlength="70"/></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                    <td><input type="text" maxlength="40"/></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--<div class="row overflow">-->
+                                        <!--<div class="col-md-12">-->
+                                            <!--<hr/>-->
+                                            <!--<p class="overflow controlsNav">-->
+                                                <!--<a class="tabLeft controlSingleNav left" href="#">Previous</a>-->
+                                                <!--<a class="nextLeft controlSingleNav right" href="#">Next</a>-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </li>
+                                <li class="">
+                                    <div class="row overflow">
+                                        <div class="col-md-12">
+                                            <br/>
+                                            <table class="latiosaxe">
+                                                <thead>
+                                                <tr>
+                                                    <th>Credit Card Type</th>
+                                                    <th>Number</th>
+                                                    <th>Expiration Date</th>
+                                                    <th>Security Number</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td><input type="text" maxlength="25"/></td>
+                                                    <td><input type="text" maxlength="16" class="justNumbers"/></td>
+                                                    <td><input type="text" maxlength="6" class="justNumbers"/></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"/></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row overflow">
+                                        <div class="col-md-12">
+                                            <p><small>Please do not use "-" or "/" characters</small></p>
+                                            <p>Your credit card only guarantees the defrayment of the services after the thirty-day credit period</p>
+                                        </div>
+                                    </div>
+                                    <hr/>
+                                    <div class="row overflow">
+                                        <div class="col-md-12 overflow margin_bottom_10">
+                                            <div style="width: 304px;" class="right">
+                                                <!--<div vc-recaptcha key="6LeTnQITAAAAAPi3bP0QE4VZbNSI8zFAVNlqX1h9"></div>-->
+                                                <!--<div re-captcha ng-model="user.captcha"></div>-->
+
+                                                <div class="g-recaptcha" data-sitekey="6LeTnQITAAAAAPi3bP0QE4VZbNSI8zFAVNlqX1h9"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 text-right">
+                                            <input type="submit" value="Send Flight Request"/>
+                                        </div>
+                                    </div>
+                                    <!--<div class="row overflow">-->
+                                        <!--<div class="col-md-12">-->
+                                            <!--<hr/>-->
+                                            <!--<p class="overflow controlsNav">-->
+                                                <!--<a class="tabLeft controlSingleNav left" href="#">Previous</a>-->
+                                            <!--</p>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
