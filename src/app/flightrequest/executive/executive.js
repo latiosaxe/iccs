@@ -128,7 +128,51 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
                 }
             });
 
+
+
+            var inputs = $('.tabs-body input');
+
+            inputs.each(function(){
+                var id = $(this).attr('id');
+                var value = localStorage.getItem(id);
+
+                $(this).val(value);
+            });
+
+            $('.tabs-body input[type=radio]').each(function() {
+                var key = $(this).attr('name');
+                var val = localStorage[key];
+                if ( $(this).attr('name') == key && $(this).attr('value') == val ) {
+                    $(this).attr('checked', 'checked');
+                }
+            });
+
+
+            var id, value;
+            inputs.change(function(){
+                if ( $(this).attr('type')=='radio' ) {
+                    id = $(this).attr('name');
+                    value = $(this).val();
+                    localStorage.setItem(id, value);
+                }else{
+                    id = $(this).attr('id');
+                    value = $(this).val();
+                    localStorage.setItem(id, value);
+                }
+
+                console.log("Update local storage");
+            });
+
         });
+
+        function saveLocal(){
+            $('.tabs-body input').each(function(){
+                var id = $(this).attr('id');
+                var value = $(this).val();
+                localStorage.setItem(id, value);
+            });
+
+        }
 
         function calendarMonths(){
 
