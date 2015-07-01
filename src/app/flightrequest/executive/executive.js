@@ -18,7 +18,10 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
 
 .controller( 'FlightRequest_Executive', function FlightRequestExecutiveController( $scope, $location ) {
         var index = 0;
-        var row = '<tr><td>From:</td><td><input type="text" maxlength="50"/></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="3" class="justNumbers"/></td></tr><tr><td>To:</td><td><input type="text" maxlength="50"/></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="3" class="justNumbers"/></td></tr>';
+        var row = '<tr><td>From:</td><td><input type="text" maxlength="50"/></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="3" class="justNumbers"/></td></tr>';
+        var row_alt = '<tr><td>To:</td><td><input type="text" maxlength="50"/></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="12"/></td><td><input type="text" maxlength="3" class="justNumbers"/></td></tr>';
+
+        var alt = 0;
 
         var globalPax = 2;
         var row2 = '<tr><td>'+globalPax+'</td><td><input type="text" maxlength="150"/></td><td><select name="genero_pxa1" id="genero_pxa1"><option value="" selected="selected">Select</option><option value="female">Female</option><option value="male">Male</option></select></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="12" class="calendarInput"/></td><td><input type="text" maxlength="40"/></td><td><input type="text" maxlength="40"/></td></tr>';
@@ -37,7 +40,14 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
 
             $("#addRowMagic").click(function(e){
                 e.preventDefault();
-                $("#target_1").append(row);
+                if(alt === 0){
+                    $("#target_1").append(row_alt);
+                    alt = 1;
+                }else{
+                    $("#target_1").append(row);
+                    alt = 0;
+                }
+
                 calendarMonths();
             });
 
@@ -117,6 +127,7 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
                     e.preventDefault();
                 }
             });
+
         });
 
         function calendarMonths(){

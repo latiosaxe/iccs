@@ -2,7 +2,7 @@
     <!--<div class="container">-->
         <!--<div class="row overflow margin_bottom_0">-->
             <!--<div class="col-md-12">-->
-                <div class="sec-header sec-small no-opacity">
+                <div class="sec-header sec-small no-opacity not-fill">
                     <div class="container relative">
                         <h1>EXECUTIVE SERVICE REQUEST</h1>
                     </div>
@@ -34,7 +34,7 @@
                                         Current Date:
                                     </p>
                                     <div class="inline-block relative">
-                                        <input type="text" maxlength="12"  id="todayInput" class="calendarInput"/>
+                                        <input type="text" maxlength="12"  id="todayInput" class="calendarInput none" disabled="disabled"/>
                                         <!--<input type='text' class="form-control calendarInput"/>-->
                                         <!--<span class="input-group-addon"></span>-->
                                     </div>
@@ -194,7 +194,7 @@
                                 <li class="labelUppercase">
                                     <div class="row overflow">
                                         <div class="col-md-12">
-                                            <p class="text-center"><strong>PLEASE MARK THE SERVICES YOU WILL REQUIRE</strong></p>
+                                            <!--<p class="text-center"><strong>PLEASE MARK THE SERVICES YOU WILL REQUIRE</strong></p>-->
                                             <fieldset class="radio text-center">
                                                 <label for="full">
                                                     GROUND HANDLING FULL SERVICE PACKAGE: <input type="checkbox" value="full" name="full" id="full"/>
@@ -204,78 +204,15 @@
                                         <div class="col-md-12">
                                             <p>
                                                 <strong>FULL SERVICE INCLUDES:</strong>
-                                            </p><p>
-                                                Representation, Landing, Parking and Aircraft Immigration fees, Ramp service, Flight Plan Coordination, Customs Immigration and Health Clearances, Flight Following, Gratuities, Crew Transportation (fare up to $50 USD), Fuel Coordination, FBO Facilities, Communications, 15% Airport Royalty, and Pax / Crew Assistance.
+                                            </p>
+                                            <p>
+                                                Representation, Landing, Parking and Aircraft Immigration fees, Ramp service, Flight Plan Coordination, Customs, Immigration and Health Clearances, Flight Following, Crew Transportation (fare up to $50 USD), Fuel Coordination, FBO Facilities, Communications, Airport Royalty, Pax / Crew Assistance and Concierge Services (car and hotel reservations).
                                             </p>
                                             <br/>
                                         </div>
                                     </div>
 
                                     <div class="row overflow">
-                                        <div class="col-md-12 text-center">
-                                            <p>ADDITIONAL SERVICES TO THE FULL SERVICE</p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="row overflow">
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Permits & Authorization</p>
-                                                        <label class="inline-block" for="permits">
-                                                            <input type="checkbox" value="yes" name="permits" id="permits"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Fuel with ICCS</p>
-                                                        <label class="inline-block" for="fuelICCS">
-                                                            <input type="checkbox" value="yes" name="fuelICCS" id="fuelICCS"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Overnight</p>
-                                                        <label class="inline-block" for="overnight">
-                                                            <input type="checkbox" value="yes" name="overnight" id="overnight"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Aircraft Security</p>
-                                                        <label class="inline-block" for="aircraft_security">
-                                                            <input type="checkbox" value="yes" name="aircraft_security" id="aircraft_security"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Pax Security</p>
-                                                        <label class="inline-block" for="pax_secirity">
-                                                            <input type="checkbox" value="yes" name="pax_secirity" id="pax_secirity"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">Pax ground transportation</p>
-                                                        <label class="inline-block" for="pax_ground">
-                                                            <input type="checkbox" value="yes" name="pax_ground" id="pax_ground"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <fieldset class="radio">
-                                                        <p class="inline-block">APIS</p>
-                                                        <label class="inline-block" for="pax_ground">
-                                                            <input type="checkbox" value="yes" name="apis" id="apis"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
-
-                                        </div>
                                         <div class="col-md-6">
                                             <fieldset class="radio">
                                                 <p>Car rental</p>
@@ -303,6 +240,9 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
+
                                             <fieldset class="radio">
                                                 <p>Hotel reservation</p>
                                                 <label for="hotel_reservation_yes">
@@ -335,6 +275,80 @@
                                                         Non-Smoking: <input type="radio" value="no" name="smoking" id="non_smoking"/>
                                                     </label>
                                                 </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row overflow">
+                                        <div class="col-md-12 text-center">
+                                            <p>ADDITIONAL SERVICES TO THE FULL SERVICE</p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row overflow">
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Permit / Authorization</p>
+                                                        <label class="inline-block" for="permits">
+                                                            <input type="checkbox" value="yes" name="permits" id="permits"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">APIS</p>
+                                                        <label class="inline-block" for="pax_ground">
+                                                            <input type="checkbox" value="yes" name="apis" id="apis"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Fuel</p>
+                                                        <label class="inline-block" for="fuelICCS">
+                                                            <input type="checkbox" value="yes" name="fuelICCS" id="fuelICCS"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Catering</p>
+                                                        <label class="inline-block" for="pax_ground">
+                                                            <input type="checkbox" value="yes" name="i_want_catering" id="i_want_catering"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Overnight</p>
+                                                        <label class="inline-block" for="overnight">
+                                                            <input type="checkbox" value="yes" name="overnight" id="overnight"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Aircraft Security</p>
+                                                        <label class="inline-block" for="aircraft_security">
+                                                            <input type="checkbox" value="yes" name="aircraft_security" id="aircraft_security"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Pax Security</p>
+                                                        <label class="inline-block" for="pax_secirity">
+                                                            <input type="checkbox" value="yes" name="pax_secirity" id="pax_secirity"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <fieldset class="radio">
+                                                        <p class="inline-block">Pax ground transportation</p>
+                                                        <label class="inline-block" for="pax_ground">
+                                                            <input type="checkbox" value="yes" name="pax_ground" id="pax_ground"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -373,6 +387,14 @@
                                                 </tr>
                                                 <tr>
                                                     <td>To:</td>
+                                                    <td><input type="text" maxlength="50"></td>
+                                                    <td><input type="text" maxlength="12" class="calendarInput"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="12"></td>
+                                                    <td><input type="text" maxlength="3" class="justNumbers"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>From:</td>
                                                     <td><input type="text" maxlength="50"></td>
                                                     <td><input type="text" maxlength="12" class="calendarInput"></td>
                                                     <td><input type="text" maxlength="12"></td>
@@ -487,16 +509,10 @@
                                         </div>
                                     </div>
                                     <div class="row overflow">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <fieldset>
                                                 <label for="specific_needs">Specific needs:</label>
                                                 <textarea name="specific_needs" id="specific_needs" cols="30" rows="10"></textarea>
-                                            </fieldset>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <fieldset>
-                                                <label for="catering">Catering:</label>
-                                                <textarea name="catering" id="catering" cols="30" rows="10"></textarea>
                                             </fieldset>
                                         </div>
                                     </div>
@@ -517,18 +533,28 @@
                                             <table class="latiosaxe">
                                                 <thead>
                                                 <tr>
-                                                    <th>Credit Card Type</th>
+                                                    <th>Credit Card (Payment Guarantee)</th>
                                                     <th>Number</th>
-                                                    <th>Expiration Date</th>
-                                                    <th>Security Number</th>
+                                                    <th width="150">Expiration Date</th>
+                                                    <th>CVV</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td><input type="text" maxlength="25"/></td>
+                                                    <td>
+                                                        <select name="credit_cadt_type" id="">
+                                                            <option value="" selected="selected">Select</option>
+                                                            <option value="VI">VI</option>
+                                                            <option value="MC ">MC</option>
+                                                            <option value="AX ">AX</option>
+                                                        </select>
+                                                    </td>
                                                     <td><input type="text" maxlength="16" class="justNumbers"/></td>
-                                                    <td><input type="text" maxlength="6" class="justNumbers"/></td>
-                                                    <td><input type="text" maxlength="3" class="justNumbers"/></td>
+                                                    <td>
+                                                        <input type="text" maxlength="2" placeholder="MM" class="credit_date"/>
+                                                        <input type="text" maxlength="2" placeholder="YY" class="credit_date"/>
+                                                    </td>
+                                                    <td><input type="password" maxlength="3" class="justNumbers"/></td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -549,6 +575,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12 text-right">
+                                            <a class="cancel_button" href="javascript: history.go(-1)"><i class="fa fa-angle-left"></i> Go Back</a>
                                             <input type="submit" value="Send Flight Request"/>
                                         </div>
                                     </div>

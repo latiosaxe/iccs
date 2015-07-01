@@ -89,6 +89,7 @@ angular.module( 'ngBoilerplate.servicesRequestCatering', [
             $(".acordeon section").hide();
 //            $(".acordeon section").eq(0).show();
             $(".qty").addClass('width0');
+            $(".note").addClass('width0');
 
             $(".acordeon .target").click(function(){
                var index = $(this).index()/2;
@@ -109,8 +110,10 @@ angular.module( 'ngBoilerplate.servicesRequestCatering', [
 
                 if($(".aux").is(':checked')){
                     $(this).children('.qty').removeClass('width0');
+                    $(this).children('.note').removeClass('width0');
                 }else{
                     $(this).children('.qty').addClass('width0');
+                    $(this).children('.note').addClass('width0');
                 }
 
                 var total= $(".acordeon").find('input[type="checkbox"]:checked').length;

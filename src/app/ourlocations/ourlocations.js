@@ -28,7 +28,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Acapulco.jpg',
                 'thumb': 'Acapulco.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'AGUASCALIENTES',
                 'icao': 'MMAS',
@@ -39,7 +40,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'picture': 'Aguascalientes.jpg',
                 'thumb': 'Aguascalientes.jpg',
                 'fbo':'',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'CABO SAN LUCAS',
                 'icao': 'MMSL',
@@ -50,7 +52,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Cabo-San-Lucas.jpg',
                 'thumb': 'Cabo-San-Lucas.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'CAMPECHE',
                 'icao': 'MMCP',
@@ -61,7 +64,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Campeche.jpg',
                 'thumb': 'Campeche.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
 
                 'name': 'CANCUN',
@@ -73,7 +77,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Cancun.jpg',
                 'thumb': 'Cancun.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'CHICHEN ITZA',
                 'icao': 'MMCT',
@@ -84,7 +89,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Chichen-Itza.jpg',
                 'thumb': 'Chichen-Itza.jpg',
-                'type': 'International (under request)'
+                'type': 'International (under request)',
+                'time': '1500-2200 Z'
             },{
                 'name': 'CIUDAD DEL CARMEN',
                 'icao': 'MMCE',
@@ -95,7 +101,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Ciudad-del-Carmen.jpg',
                 'thumb': 'Ciudad-del-Carmen.jpg',
-                'type': 'International (under request)'
+                'type': 'International (under request)',
+                'time': '1300-0100 Z'
             },{
                 'name': 'CIUDAD JUAREZ',
                 'icao': 'MMCS',
@@ -106,7 +113,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Ciudad-Juarez.jpg',
                 'thumb': 'Ciudad-Juarez.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0400 Z'
             },{
                 'name': 'CIUDAD OBREGON',
                 'icao': 'MMCN',
@@ -117,7 +125,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Ciudad-Obregon.jpg',
                 'thumb': 'Ciudad-Obregon.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'CIUDAD VICTORIA',
                 'icao': 'MMCV',
@@ -128,7 +137,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Ciudad-Victoria.jpg',
                 'thumb': 'Ciudad-Victoria.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1200-0100 Z'
             },{
                 'name': 'COLIMA',
                 'icao': 'MMIA',
@@ -139,7 +149,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Colima.jpg',
                 'thumb': 'Colima.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': '1300-0100 Z'
             },{
                 'name': 'COZUMEL',
                 'icao': 'MMCZ',
@@ -150,7 +161,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Cozumel.jpg',
                 'thumb': 'Cozumel.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             },{
                 'name': 'CUERNAVACA',
                 'icao': 'MMCB',
@@ -161,7 +173,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Cuernavaca.jpg',
                 'thumb': 'Cuernavaca.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1200-0100 Z'
             },{
                 'name': 'CULIACAN',
                 'icao': 'MMCL',
@@ -172,7 +185,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Culiacan.jpg',
                 'thumb': 'Culiacan.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0600 Z'
             },{
                 'name': 'CHETUMAL',
                 'icao': 'MMCM',
@@ -183,7 +197,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Chetumal.jpg',
                 'thumb': 'Chetumal.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'CHIHUAHUA',
                 'icao': 'MMCU',
@@ -194,7 +209,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Chihuahua.jpg',
                 'thumb': 'Chihuahua.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0400 Z'
             },{
                 'name': 'CHILPANCINGO',
                 'icao': 'MMCH',
@@ -205,7 +221,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Chilpancingo.jpg',
                 'thumb': 'Chilpancingo.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'DURANGO',
                 'icao': 'MMDO',
@@ -216,7 +233,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Durango.jpg',
                 'thumb': 'Durango.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1200-0200 Z'
             },{
                 'name': 'ENSENADA',
                 'icao': 'MMES',
@@ -227,7 +245,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Ensenada.jpg',
                 'thumb': 'Ensenada.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'GUADALAJARA',
                 'icao': 'MMGL',
@@ -238,7 +257,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Guadalajara.jpg',
                 'thumb': 'Guadalajara.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'GUAYMAS',
                 'icao': 'MMGM',
@@ -249,7 +269,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Guaymas.jpg',
                 'thumb': 'Guaymas.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-Sunset'
             },{
                 'name': 'GUERRERO NEGRO',
                 'icao': 'MMGR',
@@ -260,7 +281,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Guerrero-Negro.jpg',
                 'thumb': 'Guerrero-Negro.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'HERMOSILLO',
                 'icao': 'MMHO',
@@ -271,7 +293,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Hermosillo.jpg',
                 'thumb': 'Hermosillo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             },{
                 'name': 'HUATULCO',
                 'icao': 'MMBT',
@@ -282,7 +305,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'desc': '',
                 'picture': 'Huatulco.jpg',
                 'thumb': 'Huatulco.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0000 Z'
             },{
                 'name': 'JALAPA',
                 'icao': 'MMJA',
@@ -293,7 +317,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Jalapa.jpg',
                 'thumb': 'Jalapa.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'LA PAZ',
                 'icao': 'MMLP',
@@ -304,7 +329,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'La-Paz.jpg',
                 'thumb': 'La-Paz.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0600 Z'
             },{
                 'name': 'LEON / BAJIO',
                 'icao': 'MMLO',
@@ -315,7 +341,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Leon-Bajio.jpg',
                 'thumb': 'Leon-Bajio.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-2300 Z'
             },{
                 'name': 'LORETO',
                 'icao': 'MMLT',
@@ -326,7 +353,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Loreto.jpg',
                 'thumb': 'Loreto.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1000-0600 Z'
             },{
                 'name': 'LOS MOCHIS',
                 'icao': 'MMLM',
@@ -337,7 +365,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Los-Mochis.jpg',
                 'thumb': 'Los-Mochis.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0400 Z'
             },{
                 'name': 'MANZANILLO',
                 'icao': 'MMZO',
@@ -348,7 +377,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Manzanillo.jpg',
                 'thumb': 'Manzanillo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0200 Z'
             },{
                 'name': 'MATAMOROS',
                 'icao': 'MMMA',
@@ -359,7 +389,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Matamoros.jpg',
                 'thumb': 'Matamoros.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0200 Z'
             },{
                 'name': 'MAZATLAN',
                 'icao': 'MMMZ',
@@ -370,7 +401,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Mazatlan.jpg',
                 'thumb': 'Mazatlan.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'MERIDA',
                 'icao': 'MMMD',
@@ -381,7 +413,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Merida.jpg',
                 'thumb': 'Merida.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'MEXICALI',
                 'icao': 'MMML',
@@ -392,7 +425,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Mexicali.jpg',
                 'thumb': 'Mexicali.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0900 Z'
             },{
                 'name': 'MEXICO',
                 'icao': 'MMMX',
@@ -403,7 +437,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Mexico.jpg',
                 'thumb': 'Mexico.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'MINATITLAN',
                 'icao': 'MMMT',
@@ -414,7 +449,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Minatitlan.jpg',
                 'thumb': 'Minatitlan.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': '1300-0100 Z'
             },{
                 'name': 'MONCLOVA',
                 'icao': 'MMMV',
@@ -425,7 +461,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Monclova.jpg',
                 'thumb': 'Monclova.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'MONTERREY',
                 'icao': 'MMMY',
@@ -436,7 +473,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Monterrey.JPG',
                 'thumb': 'Monterrey.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'MONTERREY DEL NORTE',
                 'icao': 'MMAN',
@@ -447,7 +485,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Monterrey-del-Norte.jpg',
                 'thumb': 'Monterrey-del-Norte.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0600 Z'
             },{
                 'name': 'MORELIA',
                 'icao': 'MMMM',
@@ -458,7 +497,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Morelia.jpg',
                 'thumb': 'Morelia.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours (with overtime)'
             },{
                 'name': 'NOGALES',
                 'icao': 'MMNG',
@@ -469,7 +509,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Nogales.jpg',
                 'thumb': 'Nogales.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'NUEVO LAREDO',
                 'icao': 'MMNL',
@@ -480,7 +521,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Nuevo-Laredo.jpg',
                 'thumb': 'Nuevo-Laredo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0200 Z'
             },{
                 'name': 'OAXACA',
                 'icao': 'MMOX',
@@ -491,7 +533,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Oaxaca.jpg',
                 'thumb': 'Oaxaca.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'PACHUCA',
                 'icao': 'MMPC',
@@ -502,7 +545,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Pachuca.jpg',
                 'thumb': 'Pachuca.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'PALENQUE',
                 'icao': 'MMPQ',
@@ -513,7 +557,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Palenque.jpg',
                 'thumb': 'Palenque.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'PIEDRAS NEGRAS',
                 'icao': 'MMPG',
@@ -524,7 +569,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Piedras-Negras.jpg',
                 'thumb': 'Piedras-Negras.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'PLAYA DEL CARMEN',
                 'icao': 'PCM',
@@ -535,7 +581,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Playa-del-Carmen.jpg',
                 'thumb': 'Playa-del-Carmen.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'POZA RICA',
                 'icao': 'MMPA',
@@ -546,7 +593,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Poza-Rica.jpg',
                 'thumb': 'Poza-Rica.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': '1300-0100 Z'
             },{
                 'name': 'PUEBLA',
                 'icao': 'MMPB',
@@ -557,7 +605,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Puebla.jpg',
                 'thumb': 'Puebla.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'PUERTO ESCONDIDO',
                 'icao': 'MMPS',
@@ -568,7 +617,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Puerto-Escondido.jpg',
                 'thumb': 'Puerto-Escondido.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'PUERTO VALLARTA',
                 'icao': 'MMPR',
@@ -579,7 +629,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Puerto-Vallarta.jpg',
                 'thumb': 'Puerto-Vallarta.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'PUERTO PEÑASCO',
                 'icao': 'MMPE',
@@ -590,7 +641,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Puerto-Peñasco.jpg',
                 'thumb': 'Puerto-Peñasco.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'QUERETARO',
                 'icao': 'MMQT',
@@ -601,7 +653,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Queretaro.jpg',
                 'thumb': 'Queretaro.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1200-0400 Z'
             },{
                 'name': 'REYNOSA',
                 'icao': 'MMRX',
@@ -612,7 +665,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Reynosa.jpg',
                 'thumb': 'Reynosa.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'SALTILLO',
                 'icao': 'MMIO',
@@ -623,7 +677,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Saltillo.jpg',
                 'thumb': 'Saltillo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             },{
                 'name': 'SAN CRISTOBAL DE LAS CASAS',
                 'icao': 'MMSC',
@@ -634,7 +689,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'San-Cristobal-de-las-Casas.jpg',
                 'thumb': 'San-Cristobal-de-las-Casas.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1500-0000 Z'
             },{
                 'name': 'SAN FELIPE',
                 'icao': 'MMSF',
@@ -645,7 +701,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'San-Felipe.jpg',
                 'thumb': 'San-Felipe.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'SAN JOSE DEL CABO',
                 'icao': 'MMSD',
@@ -656,7 +713,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'San-Jose-del-Cabo.jpg',
                 'thumb': 'San-Jose-del-Cabo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1400-0100 Z'
             },{
                 'name': 'SAN LUIS POTOSI',
                 'icao': 'MMSP',
@@ -667,7 +725,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'San-Luis-Potosi.jpg',
                 'thumb': 'San-Luis-Potosi.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'TAMPICO',
                 'icao': 'MMTM',
@@ -678,7 +737,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tampico.jpg',
                 'thumb': 'Tampico.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1230-0300 Z'
             },{
                 'name': 'TAMUIN',
                 'icao': 'MMTN',
@@ -689,7 +749,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tamuin.jpg',
                 'thumb': 'Tamuin.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': '1400-2400 Z'
             },{
                 'name': 'TAPACHULA',
                 'icao': 'MMTP',
@@ -700,7 +761,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tapachula.jpg',
                 'thumb': 'Tapachula.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'TEHUACAN',
                 'icao': 'MMHC',
@@ -709,9 +771,10 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'fbo':'',
                 'desc': '',
                 'adress': '',
-                'picture': '',
-                'thumb': '',
-                'type': 'Domestic'
+                'picture': 'Tehuacan.jpg',
+                'thumb': 'Tehuacan.jpg',
+                'type': 'Domestic',
+                'time': '1300-0100 Z'
             },{
                 'name': 'TEPIC',
                 'icao': 'MMEP',
@@ -722,7 +785,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tepic.jpg',
                 'thumb': 'Tepic.jpg',
-                'type': 'Domestic'
+                'type': 'Domestic',
+                'time': '1400-0100 Z'
             },{
                 'name': 'TIJUANA',
                 'icao': 'MMTJ',
@@ -733,7 +797,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tijuana.jpg',
                 'thumb': 'Tijuana.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1500-0800 Z'
             },{
                 'name': 'TOLUCA',
                 'icao': 'MMTO',
@@ -744,7 +809,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Toluca.jpg',
                 'thumb': 'Toluca.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'TORREON',
                 'icao': 'MMTC',
@@ -755,7 +821,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Torreon.jpg',
                 'thumb': 'Torreon.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             },{
                 'name': 'TULUM',
                 'icao': 'MMTU',
@@ -766,7 +833,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tulum.jpg',
                 'thumb': 'Tulum.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': 'Sunrise / Sunset'
             },{
                 'name': 'TUXPAN',
                 'icao': 'MMTX',
@@ -777,7 +845,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tuxpan.jpg',
                 'thumb': 'Tuxpan.jpg',
-                'type': ''
+                'type': '',
+                'time': '1300-0100 Z'
             },{
                 'name': 'TUXTLA GUTIERREZ',
                 'icao': 'MMTG',
@@ -788,7 +857,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Tuxtla-Gutierrez.jpg',
                 'thumb': 'Tuxtla-Gutierrez.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0100 Z'
             },{
                 'name': 'URUAPAN',
                 'icao': 'MMPN',
@@ -797,9 +867,10 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'fbo':'',
                 'desc': '',
                 'adress': '',
-                'picture': '',
-                'thumb': '',
-                'type': 'International'
+                'picture': 'Uruapan.jpg',
+                'thumb': 'Uruapan.jpg',
+                'type': 'International',
+                'time': '1200-0500 Z'
             },{
                 'name': 'VERACRUZ',
                 'icao': 'MMVR',
@@ -810,7 +881,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Veracruz.jpg',
                 'thumb': 'Veracruz.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0500 Z'
             },{
                 'name': 'VILLAHERMOSA',
                 'icao': 'MMVA',
@@ -821,7 +893,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Villahermosa.jpg',
                 'thumb': 'Villahermosa.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             },{
                 'name': 'ZACATECAS',
                 'icao': 'MMZC',
@@ -832,7 +905,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Zacatecas.jpg',
                 'thumb': 'Zacatecas.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '24 Hours'
             },{
                 'name': 'ZIHUATANEJO',
                 'icao': 'MMZH',
@@ -843,7 +917,8 @@ angular.module( 'ngBoilerplate.ourlocations', [
                 'adress': '',
                 'picture': 'Zihuatanejo.jpg',
                 'thumb': 'Zihuatanejo.jpg',
-                'type': 'International'
+                'type': 'International',
+                'time': '1300-0300 Z'
             }
         ];
 
@@ -995,8 +1070,14 @@ angular.module( 'ngBoilerplate.ourlocations', [
 
             if(places[value].type !== '' || typeof places[value].type === 'undefined'){
                 $("#type").html('TYPE: <span>'+places[value].type+'</span>');
-            }else{
+            }else {
                 $("#type").html('');
+            }
+
+            if(places[value].time !== '' || typeof places[value].time === 'undefined'){
+                $("#hour").html('TIME: <span>'+places[value].time+'</span>');
+            }else{
+                $("#hour").html('');
             }
 
             $("#image").attr('src', 'assets/images/airports/'+ places[value].thumb);
