@@ -37,6 +37,14 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
                 positions.push(top);
             });
 
+            $(".dropdown_1").combodate({
+                minYear: 1940
+            });
+            $(".dropdown_2").combodate({
+                yearDescending: false,
+                minYear: 2015,
+                maxYear: 2050
+            });
 
             $("#addRowMagic").click(function(e){
                 e.preventDefault();
@@ -130,7 +138,7 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
 
 
 
-            var inputs = $('.tabs-body input');
+            var inputs = $('.tabs-body input:not(input[type="submit"])');
 
             inputs.each(function(){
                 var id = $(this).attr('id');
@@ -159,8 +167,6 @@ angular.module( 'ngBoilerplate.FlightRequestExecutive', [
                     value = $(this).val();
                     localStorage.setItem(id, value);
                 }
-
-                console.log("Update local storage");
             });
 
         });

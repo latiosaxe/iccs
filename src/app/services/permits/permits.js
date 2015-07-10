@@ -41,14 +41,23 @@ angular.module( 'ngBoilerplate.servicespermits', [
 
         $(".acordeon .target").click(function(){
             var index = $(this).index()/2;
-            $(".acordeon section").slideUp(300);
-            setTimeout(function(){
-                $(".acordeon section").eq(index).slideDown(300);
+
+
+            var este = $(this);
+            if(este.hasClass('active')){
+                $(".acordeon section").eq(index).slideUp(300);
+                $(this).removeClass('active');
+            }else{
+                $(".acordeon section").slideUp(300);
                 setTimeout(function(){
-                    var position = $(".acordeon section").eq(index).position().top;
-                    $('html,body').animate({scrollTop: position});
-                },500);
-            },300);
+                    $(".acordeon section").eq(index).slideDown(300);
+                    setTimeout(function(){
+                        var position = $(".acordeon section").eq(index).position().top;
+                        $('html,body').animate({scrollTop: position});
+                    },500);
+                },300);
+                $(this).addClass('active');
+            }
         });
 
         $(".acordeon fieldset label").click(function(){

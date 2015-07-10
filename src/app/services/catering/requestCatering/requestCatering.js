@@ -103,20 +103,64 @@ angular.module( 'ngBoilerplate.servicesRequestCatering', [
                 },300);
             });
 
-            $(".acordeon fieldset label").click(function(){
-                $(".acordeon fieldset label input[type='checkbox']").removeClass('aux');
-                var checkbox = $(this).children('input[type=checkbox]');
-                checkbox.addClass('aux');
+            var elementsData, elementChild, checkbox;
 
-                if($(".aux").is(':checked')){
-                    $(this).children('.qty').removeClass('width0');
-                    $(this).children('.note').removeClass('width0');
+            $(".acordeon input[type='checkbox']").click(function(event){
+
+            });
+
+            $('body').delegate('.acordeon fieldset input[type="checkbox"]', 'click', function(event){
+                //event.stopPropagation();
+                var este = $(this).parent().parent();
+                console.log(este);
+                checkbox = $(this);
+
+                if(este.hasClass('hasChild')){
+                    elementsData = este.attr("data-elements").split("/");
+                    elementChild = este.children(".child");
+                    if(este.hasClass("active")){
+                        elementChild.html("");
+                        este.removeClass('active');
+                        checkbox.prop('checked', false);
+                    }else{
+                        elementChild.html("");
+                        var aux;
+                        $.each(elementsData, function(index, value){
+                            console.log(value);
+                            if (value.indexOf("|") !=-1) {
+                                aux =  value.split("|");
+                                console.log(aux);
+
+                                elementChild.append("<span class='Bigblock'>"+aux[1]+"</span>");
+                                elementChild.append('<div class="falseRow"><label><input type="checkbox"/><span>'+aux[2]+'</span><input type="text" class="note width0" name="special_note'+aux[2]+'" placeholder="Special Notes"/><input type="text" class="qty width0" name="qty'+aux[2]+'" placeholder="quantity"/></label></div>');
+                            }else{
+                                elementChild.append('<div class="falseRow"><label><input type="checkbox"/><span>'+value+'</span><input type="text" class="note width0" name="special_note'+value+'" placeholder="Special Notes"/><input type="text" class="qty width0" name="qty'+value+'" placeholder="quantity"/></label></div>');
+                            }
+
+                        });
+                        este.addClass('active');
+                        checkbox.prop('checked', true);
+                    }
+
                 }else{
-                    $(this).children('.qty').addClass('width0');
-                    $(this).children('.note').addClass('width0');
+                    console.log("No");
+                    //$(".acordeon fieldset label input[type='checkbox']").removeClass('aux');
+                    //checkbox.addClass('aux');
+                    if(este.hasClass("active")){
+                        este.removeClass('active');
+                        checkbox.prop('checked', false);
+                        este.find('.qty').addClass('width0');
+                        este.find('.note').addClass('width0');
+                    }else{
+                        este.addClass('active');
+                        checkbox.prop('checked', true);
+                        este.find('.qty').removeClass('width0');
+                        este.find('.note').removeClass('width0');
+                    }
                 }
 
-                var total= $(".acordeon").find('input[type="checkbox"]:checked').length;
+
+                var total= $(".acordeon").find('.qty:not(".width0")').length;
                 $("#here").text(total);
             });
         });

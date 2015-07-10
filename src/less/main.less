@@ -1584,9 +1584,15 @@ ul.contact{
                     font-size: 12px;
                     .box-shadow(0 0 2px rgba(0, 0, 0, 0.1));
                 }
+                &.groupcombo{
+                    width: 200px;
+                }
             }
         }
     }
+}
+.combodate{
+
 }
 
 .controlsNav{
@@ -2224,13 +2230,16 @@ button.button{
         cursor: pointer;
     }
     section{
-        fieldset{
+        fieldset, .falseRow{
             width: 100%;
+            max-width: 100%;
             display: block;
-            padding: 10px;
+            padding: 0;
             border-bottom: 1px solid @gray-1;
-            cursor: pointer;
             label{
+                display: block;
+                cursor: pointer;
+                padding: 10px;
                 overflow: hidden;
                 margin: 0;
                 *{
@@ -2240,6 +2249,7 @@ button.button{
                 input[type="checkbox"]{
                     width: 20px;
                     border: 0;
+//                    display: none;
                 }
                 span{
                     font-size: 14px;
@@ -2258,6 +2268,7 @@ button.button{
                     &.width0{
                         width: 0;
                         opacity: 0;
+                        height: 0;
                     }
                 }
 
@@ -2269,9 +2280,21 @@ button.button{
                 background: rgba(0,255,255,0.1);
             }
         }
+        .falseRow{
+            padding-left: 50px;
+        }
     }
 }
 
+.Bigblock{
+    display: block;
+    padding: 25px 15px 15px 63px;
+    font-size: 12px;
+    color: #666;
+    &.noLeft{
+        padding-left: 15px;
+    }
+}
 
 .icon_aux{
     p{
@@ -2305,6 +2328,42 @@ button.button{
         }
     }
 }
+//
+//.falseRow{
+//    display: block;
+//    cursor: pointer;
+//    padding: 10px 10px 10px 40px;
+//    overflow: hidden;
+//    margin: 0;
+//    *{
+//        display: inline-block;
+//        vertical-align: middle;
+//    }
+//    input[type="checkbox"]{
+//        width: 20px;
+//        border: 0;
+//    }
+//    span{
+//        font-size: 14px;
+//        color: @font-color;
+//        margin: 0 15px;
+//        max-width: 60%;
+//    }
+//
+//    input[type="text"]{
+//        float: right;
+//        width: 120px;
+//        border: 0;
+//        opacity: 1;
+//        margin-right: 10px;
+//        .transition(all 500ms);
+//        &.width0{
+//            width: 0;
+//            opacity: 0;
+//            height: 0;
+//        }
+//    }
+//}
 @media (max-width: 1200px) {
 
 }

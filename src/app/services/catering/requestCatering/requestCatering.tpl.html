@@ -13,7 +13,7 @@
         <div class="row overflow">
             <div class="col-md-12">
                 <form class="newForm" onsubmit="return false;">
-                    <div class="row overflow hidden">
+                    <div class="row overflow">
                         <div class="col-md-12">
                             <div class="form-group">
                                 <div class='input-group date' id='datetimepicker1'>
@@ -21,7 +21,7 @@
                                         Current Date:
                                     </p>
                                     <div class="inline-block relative">
-                                        <input type="text" maxlength="12"  id="todayInput" class="calendarInput"/>
+                                        <input type="text" maxlength="12"  id="todayInput" class="calendarInput" style="background: #FFF !important;"/>
                                         <!--<input type='text' class="form-control"/>-->
                                         <!--<span class="input-group-addon"></span>-->
                                     </div>
@@ -34,135 +34,157 @@
                     <div class="acordeon">
                         <p class="target">Good Morning</p>
                         <section>
-                            <fieldset>
+                            <fieldset class="hasChild" data-elements="Corn/Wheat/Oats/Rice">
                                 <label>
                                     <input type="checkbox"/>
-                                    <span>Cereal (individual box)</span>
-                                    <input type="text" class="note" placeholder="Special Notes"/>
-                                    <input type="text" class="qty" placeholder="quantity"/>
+                                    <span>Cereal  & Milk. 30 G. Individual Box</span>
                                 </label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Croissant/Bagel">
+                                <label><input type="checkbox"/><span>Breakfast Pastries. 2 Pcs. Served With Cream Cheese, Jam And Butter </span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Bagels or Croissants : served with cream cheese, jam and butter</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Continental Breakfast . Each. Fruit, Juice, Toasts With Butter And Jam</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Brownie/Danish Roll/Muffin">
+                                <label><input type="checkbox"/><span>Assorted Biscuits. 1 Pc. Brownie, Danish Roll Or Muffin By Piece<</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Continental Breakfast : fruit, juice, toasts with butter and jam</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Bagel & Lox. 1 Bagel & 4 Oz Salmon. Bagel, Salmon, Cream Cheese, Egg, Capers And Pickles.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Assorted Biscuits: brownie, Danish roll or muffin by piece</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Clubhouse Sandwich. 1 Pc. Layered Sandwich, With Ham, Bacon, Cheese, Tomato & Lettuce. Served With Side Potato Or Pasta Salad.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Ham/Sausage/Bacon/Spinach/Mushrooms/Cheese/Veggies">
+                                <label><input type="checkbox"/><span>Omelets. 3 Eggs / 2 Oz Meat. Eggs With Your Choice Of Ham, Sausage, Bacon, Spinach, Mushrooms And Cheese.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Scrambled/Boiled/Fried/Omelet/Poached/|Please Choose A Side Sauce|Red Sauce/Green Sauce">
+                                <label><input type="checkbox"/><span>Eggs. 3 Eggs. Cooked At Your Choice With Green Or Red Sauce.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Beef/Chicken/Veggie">
+                                <label><input type="checkbox"/><span>Burritos. 3 Pc. Filled With Beef Or Chicken Or Eggs. Served With Beans, Rice And Cheese.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Bagel & Lox: 2 bagels, salmon, cream cheese, egg, capers and pickles.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Quesadillas. 3 Pc. Filled With Oaxaca Cheese</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Clubhouse Sandwich: Layered sandwich, with ham, bacon, cheese, tomato & lettuce. Served with side potato or pasta salad.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                            <fieldset class="hasChild" data-elements="Beef/Chicken">
+                                <label><input type="checkbox"/><span>Quesadillas. 3 Pc. Filled With Beef Or Chicken</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Omelets: eggs with your choice of ham, sausage, bacon, spinach, mushrooms and cheese.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Eggs: cooked at your choice with green or red sauce.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Burritos: filled with beef or chicken or eggs, beans, cheese and rice. Served with sauce.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Quesadillas: Filled with Oaxaca cheese</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Quesadillas: Filled with beef or chicken</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
+                            <!--<fieldset class="hasChild" data-elements="">-->
+                                <!--<label><input type="checkbox"/><span></span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>-->
+                                <!--<div class="child"></div>-->
+                            <!--</fieldset>-->
+
                         </section>
                         <p class="target">Lunch</p>
                         <section>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Box Lunch: sandwich, fruit, vegetables or pasta salad and dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+
+                            <fieldset class="hasChild" data-elements="Sandwich/Wrap/|Please Choose Your Second Side|Vegetables/Pasta">
+                                <label><input type="checkbox"/><span>Box Lunch. 1 Sandwich. Sandwich Or Wrap, Fruit, Vegetables Or Pasta Salad And Dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
+                            </fieldset>
+                            <fieldset class="hasChild" data-elements="Beef/Chicken Fish/|Please Choose Your Second Side|Vegetables/Pasta">
+                                <label><input type="checkbox"/><span>Hot Box Lunch. 6 Oz Meat. Beef, Chicken Or Fish, Fruit, Vegetables Or Pasta Salad And Dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Hot Box Lunch: beef, chicken or fish, fruit, vegetables or pasta salad and dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Salmon Hot Box Lunch : salmon, vegetables, smashed potatoes, mixed salad and dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Salmon Hot Box Lunch. 6 Oz. Salmon. Salmon, Vegetables, Smashed Potatoes, Mixed Salad And Dessert.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                         </section>
                         <p class="target">Mexican Specialties</p>
 
                         <section>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Beef Taco: with guacamole and sauce.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                            <fieldset class="hasChild" data-elements="Beef Taco. 3 Pc.  With Guacamole And Sauce./Fish Taco. 3 Pc. With Battered Fish, Mexican Style Sauce, Lemon And Cream/Shrimp Taco. 3 Pc. Battered Shrimp, With Cabbage, Mexican Style Salsa, Lemon And Cream.|Fried Tacos. 3 Pc|Beef. Filled With Beef, Served With Cream, Sauce And Cheese./Chicken. Filled With chicken, Served With Cream, Sauce And Cheese.">
+                                <label><input type="checkbox"/><span>Tacos. With Guacamole And Sauce.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Fish Taco: with battered fish, Mexican style sauce, lemon and cream.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Stuffed Peppers. 2 Pc. Filled With Cheese, Served With Rice, Sauce And Tortilla.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Shrimp Taco: battered shrimp, with cabbage, Mexican style salsa, lemon and cream.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Chilaquiles. 8 Oz Chips / 3 Oz Beans. Fried Tortilla Chips With Red Or Green Sauce, Served With Beans And Rice. $16</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Fried Tacos: filled with beef, served with cream, sauce and cheese.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Tamales. 2 Pc. Corn Dough Mixed With Sauce And Beef, Served With Beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Stuffed peppers: filled with cheese, served with rice, sauce and tortilla.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Enchiladas. 3 Pc. Fried Corn Tortilla Filled With Chicken And Covered With Red Or Green Sauce, Served With Rice And Beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Chilaquiles: Fried tortilla chips with red or green sauce, served with beans and rice.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Beef Fajitas. 6 Oz Meat. Beef Strips, With Peppers And Onion; Served With Rice, Guacamole And Flour Tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Tamales: Corn dough mixed with sauce and beef, served with beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Chicken Fajitas. 6 Oz Meat. Grilled Chicken Breast Strips, With Peppers And Onion; Served With Rice, Guacamole And Flour Tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Enchiladas: Fried corn tortilla filled with chicken and covered with red or green sauce, served with rice and beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Beef Fajitas: Beef strips, with peppers and onion; served with rice, guacamole and flour tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Chicken Fajitas: Grilled chicken breast strips, with peppers and onion; served with rice, guacamole and flour tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Tampico Style Steak: grilled arrachera steak, served with sliced green peppers, rice, quesadilla, beans and tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Grilled Beef: served with grilled cactus, cheese and tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
-                            </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Arrachera:  served with cheese, cactus, rice, sauce, cream and flour tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Tampiqueña Steak. 6 Oz Meat. Grilled Arrachera Steak, Served With Sliced Green Peppers, Rice, Quesadilla, Beans And Tortillas.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                         </section>
 
                         <p class="target">Soups</p>
                         <section>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Tortilla Soup: tomato and guajillo pepper soup, served with fresh white cheese, sour cream, avocado and fried tortilla strips.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+
+                            <fieldset class="hasChild" data-elements="1 Lt/½ Lt/|Chicken Soup. With Vegetables And Pasta.|1 Lt/½ Lt">
+                                <label><input type="checkbox"/><span>Tortilla Soup. Tomato And Guajillo Pepper Soup, Served With Fresh White Cheese, Sour Cream, Avocado And Fried Tortilla Strips.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Chicken Soup: with vegetables and pasta.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                            <fieldset class="hasChild" data-elements="1 Lt/½ Lt">
+                                <label><input type="checkbox"/><span>Minestrone. Chicken Soup With Vegetables And Haricot Beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Minestrone:  chicken soup with vegetables and haricot beans.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                            <fieldset class="hasChild" data-elements="">
+                                <label><input type="checkbox"/><span></span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                         </section>
 
                         <p class="target">From the Sea</p>
                         <section>
-                            <fieldset>
-                                <label><input type="checkbox"/><span>Jumbo Shrimp:4 pc cooked at your choice</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                            <fieldset class="hasChild" data-elements="|Please Choose 2 Sides|Mixed Salad/Caesar Salad/Asparagus/Steamed Mixed Vegetables/Rice">
+                                <label><input type="checkbox"/><span>Jumbo Shrimp. 4 Pc. Sauteed Or Grilled, Served With 2 Sides At Your Choice</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Midsize Shrimp Cocktail: 7 pc with cocktail sauce and lemon.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Midsize Shrimp Cocktail. 7 Pc. With Cocktail Sauce And Lemon.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Jumbo Shrimp Cocktail:  4 pc with cocktail sauce and lemon.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Jumbo Shrimp Cocktail. 4 Pc. With Cocktail Sauce And Lemon.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Fish Fillet: served with rice, vegetables, dressing, sauce and bread.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Fish Fillet.6 Oz Fish. Served With Rice, Vegetables, Dressing, Sauce And Bread.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
                             <fieldset>
-                                <label><input type="checkbox"/><span>Grilled Salmon: served with rice, vegetables, dressing, sauce and bread.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <label><input type="checkbox"/><span>Grilled Salmon. 6 Oz Salmon. Served With Rice, Vegetables, Dressing, Sauce And Bread.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
+                                <div class="child"></div>
                             </fieldset>
+
                         </section>
 
                         <p class="target">From the Grill</p>
                         <section>
+                            <span class="Bigblock noLeft">Served With 2 Sides At Your Choice: Baked Potato, Smashed Potatoes, Asparagus, Steamed Mixed Vegetables Or Rice.</span>
                             <fieldset>
                                 <label><input type="checkbox"/><span>Filet Mignon: beef steak served with 2 sides at your choice: smashed potatoes, rice or steamed vegetables.</span><input type="text" class="note" placeholder="Special Notes"/><input type="text" class="qty" placeholder="quantity"/></label>
                             </fieldset>
